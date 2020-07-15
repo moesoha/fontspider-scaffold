@@ -13,7 +13,7 @@ yarn
 
 Put your files, css, fonts and etc in `./src`, then use `yarn build` to generate your webfonts. Final files are in `./dist` . Notice only the `./src/*.html` files will be analyzed, or you can modify `gulpfile.js` on your own.
 
-There are 4 common types of webfont, `eot`, `woff`, `ttf` and `svg` . For best compatibility, we suggest to use CSS like this:
+There are 4 common types of webfont, `eot`, `woff`, `ttf` and `svg` . For best compatibility, you can use CSS like this:
 
 ```
 @font-face {
@@ -26,6 +26,8 @@ There are 4 common types of webfont, `eot`, `woff`, `ttf` and `svg` . For best c
 		url('../fonts/SourceHanSerifCN-Medium.svg') format('svg');
 }
 ```
+
+Remove one `src` property if you don't want generate that type of the font.
 
 FontSpider will analyze which characters to be included in the final font by CSS selectors in HTML. You only need to make sure the TTF file exists and other three will be generated. OTF file should be converted to TTF first.
 
