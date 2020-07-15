@@ -1,4 +1,4 @@
-const { src, dest, series, parallel } = require('gulp');
+const { src, dest, series } = require('gulp');
 const gulpFontSpider = require('gulp-font-spider');
 const clean = require('gulp-clean');
 
